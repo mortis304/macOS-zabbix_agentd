@@ -9,6 +9,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install pcre<br>
 brew install openssl@1.1
 
+# Create Zabbix Agent user
+zabbix_agent does not like to launch as root, create a Standard user called “zabbix_agent” with no home directory
+
 # Locations for Zabbix Agent files
 /usr/local/sbin/zabbix_agentd<br>
 /usr/local/etc/zabbix_agentd.conf<br>
